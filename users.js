@@ -13,4 +13,4 @@ function capitalize(str) {
     return `${firstLetter}${str.slice(1)}`
 }
 
-module.exports = { stringify }
+module.exports = { stringify, capitalize }
