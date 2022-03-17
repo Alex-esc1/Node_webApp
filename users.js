@@ -3,3 +3,12 @@ function stringify(user) {
     const lastName = capitalize(user.name.last)
     return `${user.name.title} ${firstName} ${lastName}, ${user.email}`
 }
+
+function capitalize(str) {
+    if (typeof str !== 'string') {
+        return ''
+    }
+
+    const firstLetter = str.charAt(0).toUpperCase()
+    return `${firstLetter}${str.slice(1)}`
+}
